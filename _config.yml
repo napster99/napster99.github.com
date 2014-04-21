@@ -9,14 +9,14 @@ pygments: false
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 自己的园地
-tagline: 草木有本心，何求美人折
+title : Napster' Blog
+tagline: You Will Never Get The Real Napster
 author :
-  name : 七弦
-  email : lcm.hust@gmail.com
-  github : joshualeung
-  twitter : szjoshua
-  facebook : jcleung
+  name : Napster
+  email : morrisonleisure@163.com
+  github : napster99
+#  twitter : szjoshua
+#  facebook : jcleung
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls

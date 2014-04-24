@@ -1,9 +1,7 @@
-# This is the default format. 
-# For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
-
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+name: Your New Jekyll Site
+markdown: redcarpet
 pygments: true
+<<<<<<< HEAD
 encoding: utf-8
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
@@ -129,3 +127,5 @@ JB :
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
   
+=======
+>>>>>>> 883fc113402764ce2ba34ae2db9d0b4c8bce4053

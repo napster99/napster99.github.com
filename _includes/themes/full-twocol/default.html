@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  xmlns:wb="http://open.weibo.com/wb">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -19,11 +19,13 @@
     <script src="{{ ASSET_PATH }}/js/jquery-1.7-latest.js"></script>
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/basic.css" />
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/main.css" />
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body >
 <div id="sidebar">
 	<h1><a href="{{ HOME_PATH }}" title="{{ site.title }}">{{ site.title }}</a></h1>
 	<div id="description">{{ site.tagline }}</div>
+  <div style="margin-left: 60px; margin-top: 20px; height:60px; "><wb:follow-button uid="2485883112" type="red_2"></wb:follow-button></div>
 	<ul id="nav">
 		<li>
 			<form action="./search.htm" method="get">
@@ -34,7 +36,7 @@
 		<li><a href="/categories.html">分类</a></li>
 		<li><a href="/about.html">关于</a></li>
 	</ul>
-	
+
 </div>
 <div id="main">
 {{ content }}

@@ -5,17 +5,19 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 auto: true
 markdown: redcarpet
+#redcarpet:
+#    extensions: ["fenced_code_blocks", "autolink", "tables", "strikethrough"]
 pygments: true
 encoding: utf-8
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
 title : Napster's Blog
-tagline: 心若冰清，天塌不惊
+tagline: 科技推动着人类的进步
 author :
   name : Napster
   email : zxjmychrome@gmail.com
-  github : napster
+  github : http://github.com/napster99
   twitter : ''
   facebook : ''
 # The production_url is only used when full-domain names are needed

@@ -182,6 +182,95 @@ module.exports = function(grunt) {
 };
 {% endhighlight %}
 
+**9、grunt-contrib-concat**  
+用于合并任意文件  
+{% highlight javascript %}
+concat : {
+  options : {
+    //文件内容的分隔符
+    separator : ";",
+    stripBanners : true,
+    banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+                    '<%= grunt.template.today("yyyy-mm-dd") %> */'
+  },
+  dist : {
+    src : ['src/*.js'],
+    dest : 'dest/build.built.js'
+  }
+}
+{% endhighlight %}
+
+**10、grunt-contrib-copy**  
+上面代码将src子目录（只包含它下面的第一层文件和子目录），拷贝到dest子目录下面（即dest/src目录）。如果要更准确控制拷贝行为，比如只拷贝文件、不拷贝目录、不保持目录结构  
+{% highlight javascript %}
+copy: {
+  main: {
+    expand: true,
+    cwd: 'src/',
+    src: '**',
+    dest: 'dest/',
+    flatten: true,
+    filter: 'isFile'
+  }
+}
+{% endhighlight %}
+
+**11、grunt-contrib-clean**  
+删除目录及文件
+{% highlight javascript %}
+clean: {
+  build: {
+    src: ["dest/"]
+  }
+}
+{% endhighlight %}
+
+**12、grunt-contrib-compress**  
+用于压缩文件和目录成为zip包
+{% highlight javascript %}
+compress : {
+     main: {
+        options: {
+          archive: 'archive.zip'
+        },
+        files: [
+          {src: ['src/*'], dest: 'internal_folder/',filter : 'isFile'}, //src下所有的js
+          {src: ['src/**'], dest: 'internal_folder2/'}  // src下的所有目录和文件
+        ]
+      }
+}
+{% endhighlight %}
+
+**13、grunt-contrib-jshint**  
+jshint用于javascript代码检查（并会给出建议），发布js代码前执行jshint任务，可以避免出现一些低级语法问题。  
+jshint拥有非常丰富的配置，可以自由控制检验的级别。
+{% highlight javascript %}
+jshint: {
+    options: {
+        //大括号包裹
+        curly: true,
+        //对于简单类型，使用===和!==，而不是==和!=
+        eqeqeq: true,
+        //对于首字母大写的函数（声明的类），强制使用new
+        newcap: true,
+        //禁用arguments.caller和arguments.callee
+        noarg: true,
+        //对于属性使用aaa.bbb而不是aaa['bbb']
+        sub: true,
+        //查找所有未定义变量
+        undef: true,
+        //查找类似与if(a = 0)这样的代码
+        boss: true,
+        //指定运行环境为node.js
+        node: true
+    },
+    //具体任务配置
+    files: {
+        src: ['src/*.js']
+    }
+}
+{% endhighlight %}
+
 ...
 
 后续还有很多grunt好用的插件等待收集，不过让我一个个验明正身才好啊！

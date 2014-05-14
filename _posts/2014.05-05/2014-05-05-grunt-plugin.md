@@ -43,11 +43,11 @@ uglify: { // jsmin
     options: {
         mangle: false
     },
-    build: {
-        files: {
-            'dist/js/comm.js': ['src/js/comm.js']
-        }
-    }
+	release : {
+	   files: {
+			'jsall.min.js': ['../theone10/zepto-m.js', '../theone10/ratchet.js','../theone10/swipe.js','../theone10/URLConfig.js']
+		}
+	} 
 }
 {% endhighlight %}
 

@@ -4,6 +4,7 @@ title: JS代码片段
 categories : [JavaScript]
 tags: [JS]
 ---
+
 **1.高仿Function.prototype.bind方法**  
 由于bind()方法在IE6、IE7下不支持，所以需要模拟实现一个。  
 代码如下     

@@ -38,3 +38,21 @@ tags: [JS]
             };
 })();
 {% endhighlight %}
+
+**2.创建新类**  
+{% highlight javascript %}
+/**
+ * Creates a new class
+ *
+ * @param superClass
+ * @param methods
+ */
+function clazz(SuperClass, methods) {
+    var constructor = function () {};
+    constructor.prototype = new SuperClass;
+    constructor.prototype.constructor = constructor;
+    constructor.prototype.parent = SuperClass.prototype;
+    constructor.prototype = $.extend(constructor.prototype, methods);
+    return constructor;
+}
+{% endhighlight %}

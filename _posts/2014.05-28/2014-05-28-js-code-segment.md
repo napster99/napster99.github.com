@@ -195,6 +195,24 @@ function clone(obj) {
 {% endhighlight %}  
 
 
+**7.手机端判断是否苹果浏览器**  
+{% highlight javascript %}
+var scale = 1.0, ratio = 1, assetsHost = 'g.tbcdn.cn', assetsVersion = '0.5.14', isTestEnv = false;
+(function() {
+    if (location.host.match(/(waptest|wapa)\.taobao\.com$/i)) {
+        assetsHost = 'g.assets.daily.taobao.net';
+        assetsVersion = '0.5.14';
+        isTestEnv = true;
+    }
+    if (window.devicePixelRatio === 2 && window.navigator.appVersion.match(/iphone/gi)) {
+        scale = 0.5;
+        ratio = 2;
+    }
+    var text = '<meta name="viewport" content="initial-scale=' + scale + ', maximum-scale=' + scale +', minimum-scale=' + scale + ', user-scalable=no" />'
+        + '<link' + ' type="text/css" rel="styleSheet" href="http://' + assetsHost + '/mtb/app-index/' + assetsVersion + '/index' + ratio + '.css"' + ' />';
+    document.write(text);
+})();
+{% endhighlight %}  
 
 
 

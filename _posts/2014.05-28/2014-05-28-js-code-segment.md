@@ -251,3 +251,50 @@ function getEvent(e) {
 } 
 {% endhighlight %} 
 
+
+**10.JSON对象排序**  
+{% highlight javascript %}
+/*
+* 对象数组排序，根据指定的属性值(一个或多个)及其排序方式(正序/倒序)，依次排序
+*               如果一个条件相同，则根据下一个条件进行排序，以此类推，直到条件用完，或是某一条件不同
+*
+* 参数：arr  - 需要排序的数据
+*       sort - 排序方式
+* 示例: fSortArr(arr, '属性名', { by: '属性名', bAsc: true }, { by: '属性名', bAsc: true }. { by: function(obj){ 一些逻辑处理; return 一个数值 }, bAsc: false }, ...);
+*                               by: 要排序的属性名，bAsc: true/正序、false/倒序
+*                               by: 也可以是一个方法，接收数组中当前的一个值（对象），然后返回一个数值
+*/
+function fSortArr(arr, sort){
+  var sortArr = [];
+  for( var i = 1, len = arguments.length; i < len; i++ ){
+    if( 'string' == $.type(arguments[i]) ){
+      arguments[i] = { by: arguments[i], bAsc: true }
+    }
+    sortArr.push(arguments[i]);
+  }
+  arr.sort(function(a, b){
+    return fSort(a, b, 0);
+  });
+  function fSort(a, b, index){
+    var sort = sortArr[index];
+    if(!sort){
+      return 0;
+    }
+    if( 'string' == $.type( sort.by ) ){
+      return fCompare(a[ sort.by ], b[ sort.by ]);
+    } else {
+      var av = sort.by(a)
+        , bv = sort.by(b);
+      return fCompare(av, bv);
+    }
+    function fCompare(av, bv){
+      if( av != bv ){
+        return sort.bAsc ? av - bv : bv - av;
+      } else {
+        index++;
+        return fSort(a, b, index);
+      }
+    }
+  }
+}
+{% endhighlight %} 

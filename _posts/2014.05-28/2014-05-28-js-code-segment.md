@@ -298,3 +298,21 @@ function fSortArr(arr, sort){
   }
 }
 {% endhighlight %} 
+
+
+**11.MimeMap**  
+{% highlight javascript %}
+StaticServlet.MimeMap = {
+  'txt': 'text/plain',
+  'html': 'text/html',
+  'css': 'text/css',
+  'xml': 'application/xml',
+  'json': 'application/json',
+  'js': 'application/javascript',
+  'jpg': 'image/jpeg',
+  'jpeg': 'image/jpeg',
+  'gif': 'image/gif',
+  'png': 'image/png',
+  'svg': 'image/svg+xml'
+};
+{% endhighlight %} 

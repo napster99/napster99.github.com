@@ -316,3 +316,18 @@ StaticServlet.MimeMap = {
   'svg': 'image/svg+xml'
 };
 {% endhighlight %} 
+
+
+**12.javascript判断是手机还是电脑访问网页的简单实例分享**  
+{% highlight javascript %}
+var system ={};  
+var p = navigator.platform;       
+system.win = p.indexOf("Win") == 0;  
+system.mac = p.indexOf("Mac") == 0;  
+system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
+if(system.win||system.mac||system.xll){//如果是电脑跳转到百度  
+    window.location.href="http://www.baidu.com/";  
+}else{  //如果是手机,跳转到谷歌
+    window.location.href="http://www.google.cn/";  
+}
+{% endhighlight %} 

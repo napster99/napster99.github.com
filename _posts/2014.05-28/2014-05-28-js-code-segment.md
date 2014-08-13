@@ -245,6 +245,9 @@ function contains(parentNode, childNode) {
     return !!(parentNode.compareDocumentPosition(childNode) & 16);
   }
 }
+function contains(parentNode, childNode) {
+ return parentNode.contains ? parentNode != childNode && parentNode.contains(childNode) : !!(parentNode.compareDocumentPosition(childNode) & 16);
+}
 //取得当前window对象的事件
 function getEvent(e) {
     return e || window.event;

@@ -335,7 +335,7 @@ if(system.win||system.mac||system.xll){//如果是电脑跳转到百度
 }
 {% endhighlight %} 
 
-**12.javascript判断是手机还是电脑访问网页的简单实例分享**  
+**13.html5屏幕旋转事件，html5如何实现屏幕旋转**  
 {% highlight javascript %}
 
 function hengshuping(){

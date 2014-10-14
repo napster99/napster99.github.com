@@ -334,3 +334,17 @@ if(system.win||system.mac||system.xll){//如果是电脑跳转到百度
     window.location.href="http://www.google.cn/";  
 }
 {% endhighlight %} 
+
+**12.javascript判断是手机还是电脑访问网页的简单实例分享**  
+{% highlight javascript %}
+
+function hengshuping(){
+    if(window.orientation==180||window.orientation==0){
+      alert("竖屏状态！")
+    }
+    if(window.orientation==90||window.orientation==-90){
+      alert("横屏状态！")
+    }
+}
+window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+{% endhighlight %} 

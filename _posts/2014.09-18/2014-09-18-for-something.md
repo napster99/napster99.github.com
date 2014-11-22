@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 提高程序员工作效率的5个诀窍
+title: 提高程序员工作效率的6个诀窍
 categories : []
 tags: []
 ---

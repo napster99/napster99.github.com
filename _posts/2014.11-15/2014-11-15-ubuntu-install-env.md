@@ -12,8 +12,8 @@ sudo apt-get install nodejs
 
 但是正常下应该是输入node进入命令而不是nodejs；
 
-在Ubuntu下node是属于其他应用的，不过继续输入下面的命令安装，完成后就可以使用node进入命令啦。
-
+在Ubuntu下node是属于其他应用的，不过继续输入下面的命令安装，完成后就可以使用node进入命令啦。  
+{% highlight javascript %}
 sudo apt-get install nodejs-legacy
 {% endhighlight %}  
 nodejs安装完后，继续安装npm；  

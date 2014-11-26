@@ -58,4 +58,4 @@ dir: 与log类似，不同之处在于，会调用浏览器的console.dir()函�
 noConflict: 如果之前已经在全局域中定义了async变量，当导入本async.  js时，会先把之前的async变量保存起来，然后覆盖它。仅仅用于浏览器端，在nodejs中没用，这里无法演示。  
 
 
-演示代码：[https://github.com/napster99/code-fragment/tree/master/nodejs-async/](https://github.com/napster99/code-fragment/tree/master/nodejs-async/).
+演示代码：[https://github.com/napster99/code-fragment/tree/master/nodejs-async/](https://github.com/napster99/code-fragment/tree/master/nodejs-async/)

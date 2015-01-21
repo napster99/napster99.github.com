@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何把JavaScript发挥的收放自如
+title: 前端价值
 categories : [JS]
 tags: [JS]
 ---  

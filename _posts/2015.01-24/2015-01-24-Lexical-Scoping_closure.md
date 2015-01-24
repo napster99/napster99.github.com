@@ -149,4 +149,4 @@ MS的IE浏览器在 ActiveX 对象和客户端 DOM 元素的 GC 方面表现较�
 
 在IE客户端编程使用闭包的时候，这种循环引用经常出现。当你使用闭包的时候，记住，封闭 (enclosing) 函数的调用对象，包括函数所有的参数和局部变量，都将和闭包一样”长寿”。如果任何函数参数或者局部变量引用了一个客户端对象，就会发生内存泄露。  
 
-原文地址：[http://www.v-ec.com/dh20156/article.asp?id=36](http://www.v-ec.com/dh20156/article.asp?id=36)
+原文地址：[Follow Me](http://github.com/napster99)

@@ -4,7 +4,7 @@ title: JS执行效率与性能提升——语法
 categories : [JS]
 tags: [JS]
 ---
-##提升JavaScript性能与运行效率。
+提升JavaScript性能与运行效率。
 
 循环 循环是很常用的一个控制结构，大部分东西要依靠它来完成，在JavaScript中，我们可以使用for(;;),while(),for(in)三种循环，事实上，这三种循环中for(in)的效率极差，因为他需要查询散列键，只要可以就应该尽量少用。for(;;)和while循环的性能应该说基本（平时使用时）等价。
 

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Video.js Test Suite</title>
+  <style type="text/css">
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .wrap {
+    display: flex;
+  }
+  
+  .wrap div {
+    flex: 1;
+    margin: 5px;
+  }
+  .wrap:nth-child(2) div{
+    margin-top: 0;
+  }
+  </style>
+  <link href="./v/video-js.css" rel="stylesheet">
+  <script src="./v/video.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div>
+      <video id="example_video_1" class="video-js vjs-default-skin" controls height="264" data-setup='{"autoplay": true}'>
+        <source src="rtmp://pull.a8.com/live/1465042103005801" type='rtmp/mp4' />
+      </video>
+    </div>
+    <div>
+      <video id="example_video_2" class="video-js vjs-default-skin" controls height="264" data-setup='{"autoplay": true}'>
+        <source src="rtmp://pull6.a8.com/live/1465043964033169" type='rtmp/mp4' />
+      </video>
+    </div>
+    <div>
+      <video id="example_video_3" class="video-js vjs-default-skin" controls height="264" data-setup='{"autoplay": true}'>
+        <source src="rtmp://pull.a8.com/live/1465043667355779" type='rtmp/mp4' />
+      </video>
+    </div>
+    <div>
+      <video id="example_video_8" class="video-js vjs-default-skin" controls height="264" data-setup='{"autoplay": true}'>
+        <source src="rtmp://pull99.a8.com/live/1465044249943758" type='rtmp/mp4' />
+      </video>
+    </div>
+  </div>
+  <div class="wrap">
+    <div>
+      <video id="example_video_4" class="video-js vjs-default-skin" controls height="264" data-setup='{"autoplay": true}'>
+        <source src="rtmp://pull99.a8.com/live/1465044617376976" type='rtmp/mp4' />
+      </video>
+    </div>
+    <div>
+      <video id="example_video_5" class="video-js vjs-default-skin" controls height="264" data-setup='{"autoplay": true}'>
+        <source src="rtmp://pull99.a8.com/live/1465044055094259" type='rtmp/mp4' />
+      </video>
+    </div>
+    <div>
+      <video id="example_video_6" class="video-js vjs-default-skin" controls height="264" data-setup='{"autoplay": true}'>
+        <source src="rtmp://pull99.a8.com/live/1465044382981386" type='rtmp/mp4' />
+      </video>
+    </div>
+    <div>
+      <video id="example_video_7" class="video-js vjs-default-skin" controls height="264" data-setup='{"autoplay": true}'>
+        <source src="rtmp://pull99.a8.com/live/1465044389710862" type='rtmp/mp4' />
+      </video>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+</script>
+
+</html>

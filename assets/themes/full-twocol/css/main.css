@@ -1,5 +1,4 @@
 body {
-	background: #eee url('http://x.libdd.com/farm1/c8b5b1/6e704b51/348A8.png');
 	overflow: hidden;
 	font-family: Songti;
 }
@@ -146,7 +145,6 @@ body {
 .body {
 	width: 95%;
 	padding: 24px 24px 6px;
-	background: #fff url('http://x.libdd.com/farm1/c8b5b1/87f04e98/C75D5.png') repeat-x bottom;
 	border-radius: 5px;
 	box-shadow: 0 1px 2px #bbb;
 	font-size: 18px;
@@ -282,13 +280,10 @@ cite { font-style: normal; }
 
 .meta a:hover { color: #444; }
 
-.tags { background: url('http://x.libdd.com/farm1/c8b5b1/3b000ce8/6B15D.png') no-repeat left center; }
 
 .tags a:before { content: '#'; }
 
-.reblog { background: url('http://x.libdd.com/farm1/c8b5b1/5e6b6c64/2BE7D.png') no-repeat left center; }
 
-.notes-count { background: url('http://x.libdd.com/farm1/c8b5b1/3ad02303/BC249.png') no-repeat left center; }
 
 #notes {
 	margin-bottom: 36px;
@@ -423,7 +418,6 @@ ul.pages li{
 
 .date { 
    color: #777;
-   background: url(http://x.libdd.com/farm1/dc389b/c6766d81/FB418.png) no-repeat; 
    position: absolute;
    z-index: 20;
    margin: 10px 0 0 -9px; 

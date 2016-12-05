@@ -6,8 +6,6 @@ tags: [NodeJS]
 ---
 ###nodejs debug <- keywords
 
-[原文地址](https://nodejs.org/api/debugger.html#debugger_commands_reference/)
-
 ###命令行调试
 我们平时的调试方式：
 

@@ -8,7 +8,6 @@ tags: [NodeJS]
 
 ###nodejs superagent <- keywords
 
-[原文地址](http://www.codesec.net/view/183926.html/)
 
 起源：近段时间做公司的运营后台，为了确保服务端接口都能正常访问，就做了个接口探测工具，里面的核心技术就是用到了superangent模块。为此抛砖引玉，今天就来缩缩superagent到底是个什么鬼？
 

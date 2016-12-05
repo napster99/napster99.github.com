@@ -4,8 +4,6 @@ title:  NodeJS的代码调试和性能调优
 categories : [NodeJS]
 tags: [NodeJS]
 ---
-# NodeJS的代码调试和性能调优  (2016-06-21)
-
 ###nodejs debug <- keywords
 
 [原文地址](https://nodejs.org/api/debugger.html#debugger_commands_reference/)

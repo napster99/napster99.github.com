@@ -5,7 +5,6 @@ categories : [NodeJS]
 tags: [NodeJS]
 ---
 
-# superagent使用讲解  (2016-06-23)
 
 ###nodejs superagent <- keywords
 

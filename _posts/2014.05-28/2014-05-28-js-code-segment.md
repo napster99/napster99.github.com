@@ -350,7 +350,7 @@ window.addEventListener("onorientationchange" in window ? "orientationchange" : 
 {% endhighlight %} 
 
 
-**13.根据输入时间，输出天数**  
+**14.根据输入时间，输出天数**  
 {% highlight javascript %}
 
 function getMiddleDays(startTime, endTime) {

@@ -348,3 +348,31 @@ function hengshuping(){
 }
 window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
 {% endhighlight %} 
+
+
+**13.根据输入时间，输出天数**  
+{% highlight javascript %}
+
+function getMiddleDays(startTime, endTime) {
+    var startDate = new Date(startTime);
+    var endMonth = new Date(endTime).getMonth();
+    var endDays = new Date(endTime).getDate();
+
+    var days = [], date = startDate, y, m, d;
+    while(true) {
+        y = date.getFullYear();
+        m = ('00'+(date.getMonth() + 1)).substring(String(date.getMonth() + 1).length);
+        d = ('00'+date.getDate()).substring(String(date.getDate() + 1).length);
+        days.push(y+'-'+m+'-'+d);
+        if((startDate.getMonth() === endMonth) && (startDate.getDate() === endDays)) {
+            console.log('break')
+            break;
+        }
+        date = new Date(startDate.setDate(startDate.getDate() + 1));
+        
+    }
+    return days;
+}
+
+var days = getMiddleDays('2016-10-01 12:12:12', '2016-11-02 12:12:12');
+{% endhighlight %} 
